@@ -4,4 +4,5 @@
 
 Front-end: React, react-bootstrap, @reduxjs/toolkit
 
-Back-end: a simple backend service built with Express.js
+For use with the-football-app backend.
+To run in develoment mode type `npm start` and point your browser to `hhtp://localhost:3000`
