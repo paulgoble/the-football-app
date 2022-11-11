@@ -4,4 +4,4 @@
 
 Front-end: React, react-bootstrap, @reduxjs/toolkit
 
-For use with the-football-app backend. To run in develoment mode type `npm start` and point your browser to `http://localhost:3000`
+For use with the-football-app [backend](https://github.com/paulgoble/the-football-app-backend). To run in develoment mode type `npm start` and point your browser to `http://localhost:3000`
