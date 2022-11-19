@@ -6,7 +6,7 @@ import { Table, Spinner } from 'react-bootstrap'
 
 const ResultsTable = ({date, results}) => (
   <div className='match-day'>
-    <h6>{new Date(date).toDateString()}</h6>
+    <h6>{new Date(date.slice(5).concat('-', date.slice(0,4))).toDateString()}</h6>
     <Table size='sm'>
       <tbody>
         {results.map(match => {
