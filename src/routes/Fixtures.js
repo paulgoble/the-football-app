@@ -6,7 +6,12 @@ import { Table, Spinner } from 'react-bootstrap'
 
 const MatchDayTable = ({date, fixtures}) => (
   <div className='match-day'>
-    <h6>{new Date(date.slice(5).concat('-', date.slice(0,4))).toDateString()}</h6>
+    <h6>
+      {new Date(
+        date.slice(5).concat('-', date.slice(0,4))
+        .replace(/-/g, "/")).toDateString()
+      }
+    </h6>
     <Table size='sm'>
       <tbody>
         {fixtures.map(match => {
@@ -18,14 +23,14 @@ const MatchDayTable = ({date, fixtures}) => (
           {
             primary: new Date(match.time.starting_at.timestamp * 1000)
               .toLocaleTimeString([], {
-                hour: '2-digit', 
+                hour: 'numeric', 
                 minute: '2-digit'
               }),
             secondary: null
           } :
           {
             primary: `${match.scores.localteam_score} - ${match.scores.visitorteam_score}`,
-            secondary: match.time.minute
+            secondary: match.time.minute + "'"
           }
 
           return (<Match 
