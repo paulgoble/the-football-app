@@ -10,7 +10,7 @@ const App = () => {
   const [teamId, setTeamId] = React.useState(null)
   const [showTeamInfo, setShowTeamInfo] = React.useState(false)
   
-  const imageURL = './world-cup-2022-logo.svg'
+  const imageURL = './Premier_League-Logo.wine.svg' //update
 
   const handleClick = (e) => {
     e.preventDefault();
