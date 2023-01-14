@@ -18,7 +18,7 @@ export const TeamInfo = ({teamId}) => {
     <div className='team-info'>
       <h1>{team.name}</h1>
       <img src={team.logo_path}></img>
-      <h4>FIFA Ranking: {team.fifaranking.data.position}</h4>
+      {/* <h4>FIFA Ranking: {team.fifaranking.data.position}</h4> */}
       <h4>Coach: {team.coach.data.fullname}</h4>
     </div>
   )
