@@ -1,6 +1,6 @@
 # the-football-app
 
-## A full-stack web app you can use to follow your team in the World Cup!
+## A full-stack web app you can use to follow your favorite Premier League team!!
 
 Front-end: React, react-bootstrap, @reduxjs/toolkit
 
